@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  navigationTarget: string = 'Recipes';
+
+  onNavigatedTo(navigationTarget: string) {
+    this.navigationTarget = navigationTarget;
+  }
 }
